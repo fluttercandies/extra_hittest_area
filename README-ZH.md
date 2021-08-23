@@ -1,20 +1,22 @@
-# extra_hittest_area
+# expand_hittest_area
 
 [![pub package](https://img.shields.io/pub/v/expand_hittest_area.svg)](https://pub.dartlang.org/packages/expand_hittest_area) [![GitHub stars](https://img.shields.io/github/stars/fluttercandies/expand_hittest_area)](https://github.com/fluttercandies/expand_hittest_area/stargazers) [![GitHub forks](https://img.shields.io/github/forks/fluttercandies/expand_hittest_area)](https://github.com/fluttercandies/expand_hittest_area/network)  [![GitHub license](https://img.shields.io/github/license/fluttercandies/expand_hittest_area)](https://github.com/fluttercandies/expand_hittest_area/blob/master/LICENSE)  [![GitHub issues](https://img.shields.io/github/issues/fluttercandies/expand_hittest_area)](https://github.com/fluttercandies/expand_hittest_area/issues) <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5bcc0gy"><img border="0" src="https://pub.idqqimg.com/wpa/images/group.png" alt="flutter-candies" title="flutter-candies"></a>
 
-Language: README.md | [中文简体](README-ZH.md)
+Language: [English](README.md) | 中文简体
 
-Manually add extra the hitTest area of a widget without changing its size or layout.
+增加额外的 hitTest 区域，而不影响本身的 widget 大小和布局。
 
+## 父 widgets
 
-## Parent widgets
+跟官方的 widgets 一样，使用它们来保证，当额外 hitTest 区域超出了父 widget的大小的时候，一样能接收到 hitTest。
 
-The widgets are the same as offical widgets. They are make sure your widget can get hitTest from parent, use them if extra hitTest area are beyond the size of parent.
 
 * `StackHitTestWithoutSizeLimit`
 * `RowHitTestWithoutSizeLimit`, `ColumnHitTestWithoutSizeLimit`, `FlexHitTestWithoutSizeLimit`
 * `SizedBoxHitTestWithoutSizeLimit`
-## Listener widgets
+  
+
+## 监听点击事件的 widgets
 
 * `GestureDetectorHitTestWithoutSizeLimit`
 * `RawGestureDetectorHitTestWithoutSizeLimit`
@@ -23,14 +25,14 @@ The widgets are the same as offical widgets. They are make sure your widget can 
 
 | parameter        | description               | default         |
 | ---------------- | ------------------------- | --------------- |
-| extraHitTestArea | The extra area of hitTest | EdgeInsets.zero |
-| debugHitTestAreaColor | The color of the extra area | null |
+| extraHitTestArea | 额外增加的 hitTest 区域 | EdgeInsets.zero |
+| debugHitTestAreaColor | 用于 debug 的 hitTest 区域背景色 | null |
 
-you can also set `ExtraHitTestBase.debugGlobalHitTestAreaColor` instead set `debugHitTestAreaColor` in everytime.
+你可以设置 `ExtraHitTestBase.debugGlobalHitTestAreaColor` 来替代在每个监听 widgets 中单独设置 `debugHitTestAreaColor`
 
-## Implements other HitTestWithoutSizeLimit
+## 实现其他的 HitTestWithoutSizeLimit
 
-if some widgets are not included in this package, you can implements them with following classes.
+如果这个 package 没有你需要的 widgets ， 你可以使用下面的类自己实现。
 
 * `RenderBoxHitTestWithoutSizeLimit`, `RenderBoxChildrenHitTestWithoutSizeLimit`
 
