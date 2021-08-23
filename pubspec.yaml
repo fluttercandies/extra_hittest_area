@@ -1,7 +1,7 @@
 name: extra_hittest_area
-description: Manually expand the hitTest area of a widget without changing its size or layout.
+description: Manually add extra the hitTest area of a widget without changing its size or layout.
 version: 0.1.0
-homepage:
+homepage: https://github.com/fluttercandies/extra_hittest_area
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
