@@ -30,6 +30,18 @@ Language: [English](README.md) | 中文简体
 
 你可以设置 `ExtraHitTestBase.debugGlobalHitTestAreaColor` 来替代在每个监听 widgets 中单独设置 `debugHitTestAreaColor`
 
+```dart
+return GestureDetectorHitTestWithoutSizeLimit(
+  child: mockButtonUI(text),
+  //debugHitTestAreaColor: Colors.pink.withOpacity(0.4),
+  extraHitTestArea: const EdgeInsets.all(16),
+  onTap: () {
+    showToast('$text:onTap${i++}',
+        duration: const Duration(milliseconds: 500));
+  },
+);
+```
+
 ## 实现其他的 HitTestWithoutSizeLimit
 
 如果这个 package 没有你需要的 widgets ， 你可以使用下面的类自己实现。

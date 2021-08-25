@@ -28,6 +28,19 @@ The widgets are the same as offical widgets. They are make sure your widget can 
 
 you can also set `ExtraHitTestBase.debugGlobalHitTestAreaColor` instead set `debugHitTestAreaColor` in everytime.
 
+
+```dart
+return GestureDetectorHitTestWithoutSizeLimit(
+  child: mockButtonUI(text),
+  //debugHitTestAreaColor: Colors.pink.withOpacity(0.4),
+  extraHitTestArea: const EdgeInsets.all(16),
+  onTap: () {
+    showToast('$text:onTap${i++}',
+        duration: const Duration(milliseconds: 500));
+  },
+);
+```
+
 ## Implements other HitTestWithoutSizeLimit
 
 if some widgets are not included in this package, you can implements them with following classes.
