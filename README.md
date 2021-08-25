@@ -1,10 +1,10 @@
 # extra_hittest_area
 
-[![pub package](https://img.shields.io/pub/v/expand_hittest_area.svg)](https://pub.dartlang.org/packages/expand_hittest_area) [![GitHub stars](https://img.shields.io/github/stars/fluttercandies/expand_hittest_area)](https://github.com/fluttercandies/expand_hittest_area/stargazers) [![GitHub forks](https://img.shields.io/github/forks/fluttercandies/expand_hittest_area)](https://github.com/fluttercandies/expand_hittest_area/network)  [![GitHub license](https://img.shields.io/github/license/fluttercandies/expand_hittest_area)](https://github.com/fluttercandies/expand_hittest_area/blob/master/LICENSE)  [![GitHub issues](https://img.shields.io/github/issues/fluttercandies/expand_hittest_area)](https://github.com/fluttercandies/expand_hittest_area/issues) <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5bcc0gy"><img border="0" src="https://pub.idqqimg.com/wpa/images/group.png" alt="flutter-candies" title="flutter-candies"></a>
+[![pub package](https://img.shields.io/pub/v/extra_hittest_area.svg)](https://pub.dartlang.org/packages/extra_hittest_area) [![GitHub stars](https://img.shields.io/github/stars/fluttercandies/extra_hittest_area)](https://github.com/fluttercandies/extra_hittest_area/stargazers) [![GitHub forks](https://img.shields.io/github/forks/fluttercandies/extra_hittest_area)](https://github.com/fluttercandies/extra_hittest_area/network)  [![GitHub license](https://img.shields.io/github/license/fluttercandies/extra_hittest_area)](https://github.com/fluttercandies/extra_hittest_area/blob/master/LICENSE)  [![GitHub issues](https://img.shields.io/github/issues/fluttercandies/extra_hittest_area)](https://github.com/fluttercandies/extra_hittest_area/issues) <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5bcc0gy"><img border="0" src="https://pub.idqqimg.com/wpa/images/group.png" alt="flutter-candies" title="flutter-candies"></a>
 
 Language: README.md | [中文简体](README-ZH.md)
 
-Manually add extra the hitTest area of a widget without changing its size or layout.
+Manually add the extra hitTest area of a widget without changing its size or layout.
 
 
 ## Parent widgets
