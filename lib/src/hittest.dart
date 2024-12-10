@@ -142,7 +142,7 @@ class _BoxHitTestEntry extends BoxHitTestEntry {
       : super(target, localPosition);
 
   @override
-  int get hashCode => hashValues(target, localPosition);
+  int get hashCode => Object.hashAll(<Object?>[target, localPosition]);
 
   @override
   bool operator ==(Object other) {
